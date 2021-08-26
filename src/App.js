@@ -4,6 +4,7 @@ import WarningSign from './components/WarningSign'
 import MyBadge from './components/MyBadge';
 import SingleBook from './components/SingleBook';
 import fantasyBooks from './fantasyBooks.json'
+import BookList from './components/BookList';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <WarningSign text="Watch Out!" />
         <MyBadge color="info" text="I'm a badge" />
         <SingleBook book={fantasyBooks[0]}></SingleBook>
+        <BookList books={fantasyBooks} />
       </header>
     </div>
   );
